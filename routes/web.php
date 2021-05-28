@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/hola', function (\Illuminate\Http\Request $request) {
+    return "Hola ".$request->get('name');
+});
