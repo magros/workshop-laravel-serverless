@@ -26,10 +26,10 @@ functions:
             - ${bref:layer.php-74-fpm}
         events:
           - alb:
-              listenerArn: arn:aws:elasticloadbalancing:us-west-2:596445984235:loadbalancer/app/test/7f03ed4f030f9916
+              listenerArn: arn:aws:elasticloadbalancing:us-west-2:596445984235:loadbalancer/app/test/7f03ed4f030f9916/
               priority: 1
               conditions:
-                path: /hello
+                path: /
 #            -   httpApi: '*'
 
 plugins:
