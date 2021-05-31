@@ -30,7 +30,6 @@ functions:
               priority: 1
               conditions:
                 path: /
-#            -   httpApi: '*'
 
 plugins:
     # We need to include the Bref plugin
