@@ -18,5 +18,6 @@ Route::get('/', function () {
 });
 
 Route::get('/hola', function (\Illuminate\Http\Request $request) {
+    sleep(40);
     return "Hola ".$request->get('name');
 });

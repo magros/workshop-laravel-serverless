@@ -21,7 +21,7 @@ functions:
     # This function runs the Laravel website/API
     web:
         handler: public/index.php
-        timeout: 28 # in seconds (API Gateway has a timeout of 29 seconds)
+        timeout: 40 # in seconds (API Gateway has a timeout of 29 seconds)
         layers:
             - ${bref:layer.php-74-fpm}
         events:
@@ -29,7 +29,7 @@ functions:
               listenerArn: arn:aws:elasticloadbalancing:us-west-2:596445984235:loadbalancer/app/test/7f03ed4f030f9916
               priority: 1
               conditions:
-                path: /
+                
 #            -   httpApi: '*'
 
 plugins:
